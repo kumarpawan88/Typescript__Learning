@@ -1,15 +1,22 @@
 {
-  "name": "typescript__learning",
+  "name": "typescript-learning",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "TypeScript compilation and runtime workflow",
+  "main": "dist/intro.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist",
+    "build": "tsc",
+    "start": "nodemon dist/intro.js",
+    "dev": "npm run clean && npm run build && npm run start",
+    "watch": "tsc -w",
+    "test": "echo \"Add Playwright or other test commands here\" && exit 0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Pawan",
+  "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
-    "typescript": "^5.8.3"
+    "nodemon": "^3.0.0",
+    "typescript": "^5.0.0"
   }
 }
+
