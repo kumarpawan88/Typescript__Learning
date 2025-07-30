@@ -1,5 +1,6 @@
-let x=10;
-let y = x++;
-console.log(y); // Output: 10 (y is assigned the original value of x before increment)
-console.log(x); // Output: 9 (x is decremented after the assignment)
+let s1: string = "Hello";
+let s2: string = "7";
+let s3: string = "World";
 
+console.log(10+20+30+s1+s2+s3); // Output: 60Hello7World
+console.log(10+20+s2+s3); // Output: Hello30World7 (concatenation with numbers)
